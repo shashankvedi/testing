@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1 id="demo"></h1>
+<button onclick="pattern()">Print Pattern</button>
+<script>
+function pattern() {
+    let a = 1;
+    let r = 1;
+    let txt = '';
+    while (r <= 3) {
+        let c = 1;
+        while (c <= 3) {
+            txt += a.toString();
+            a++;
+            c++;
+        }
+        txt += '<br>'; // Use <br> instead of \n for line breaks in HTML
+        r++;
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
